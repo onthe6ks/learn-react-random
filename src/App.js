@@ -2,6 +2,7 @@ import "./styles.css";
 import "./spinkit.css";
 
 import React, { useState } from "react";
+import { SpinkitSample } from "./sample/SpinkitSample";
 
 export default function App() {
   const randomList = ["Tokyo", "Chiba", "Saitama"];
@@ -28,17 +29,13 @@ export default function App() {
 
   const Loading = () => {
     return (
-      <div className="sk-grid">
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-        <div className="sk-grid-cube"></div>
-      </div>
+      <>
+        <div className="sk-wander sk-center">
+          <div className="sk-wander-cube"></div>
+          <div className="sk-wander-cube"></div>
+          <div className="sk-wander-cube"></div>
+        </div>
+      </>
     );
   };
 
@@ -47,6 +44,7 @@ export default function App() {
       {displayFlag || <Loading />}
       {displayFlag && <ResultArea />}
       <button onClick={onButton}>random</button>
+      {/* <SpinkitSample /> */}
     </div>
   );
 }
