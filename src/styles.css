@@ -2,3 +2,21 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+button {
+  width: 100px;
+  height: 100px;
+  background: #ff99ff;
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: #ff7fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.result {
+  transition: font-size 3s;
+  font-size: 30px;
+}
