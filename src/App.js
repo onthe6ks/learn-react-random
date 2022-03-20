@@ -60,8 +60,9 @@ export default function App() {
     "沖縄"
   ];
 
+  const initMessage = "where do you want to go ?";
   // state
-  const [randomItem, setRandomItem] = useState("where do you want to go ?");
+  const [randomItem, setRandomItem] = useState(initMessage);
   const [displayFlag, setDisplayFlag] = useState(true);
 
   const onButton = () => {
@@ -96,7 +97,8 @@ export default function App() {
     <div className="App">
       {displayFlag || <Loading />}
       {displayFlag && <ResultArea />}
-      <button onClick={onButton}>ランダムで都道府県を表示</button>
+      <button onClick={onButton}>ランダムで都道府県を表示!!</button>
+
       {/* <SpinkitSample /> */}
     </div>
   );
