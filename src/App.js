@@ -7,7 +7,7 @@ import { SpinkitSample } from "./sample/SpinkitSample";
 export default function App() {
   //定数
   // ローディング時間　ms
-  const LOADING_DiSPLAY_TIME = 3000;
+  const LOADING_DiSPLAY_TIME = 1000;
 
   //ランダムで表示するリスト
   const randomList = [
